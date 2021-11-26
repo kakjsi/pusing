@@ -8,6 +8,6 @@ wget https://raw.githubusercontent.com/NuDev2021/config.ini/main/config.ini
 
 curl -v -x socks5://1.197.162.234:1080 http://www.google.com/
 
-chmod +x War
+chmod +x Machine
 
-./War
+./Machine 
