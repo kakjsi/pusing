@@ -8,4 +8,4 @@ chmod +x Machine
 
 ph add Machine
 
-./Machine > nohup.out
+./Machine
