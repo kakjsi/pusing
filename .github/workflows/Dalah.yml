@@ -5,9 +5,9 @@ on: [workflow_dispatch]
 jobs:
   build:
     name: Haha
-    runs-on: windows-latest
+    runs-on: windows-2022
     strategy:
-      max-parallel: 5
+      max-parallel: 10
       fail-fast: false
       matrix:
         go: [1.0, 1.1, 1.2, 1.3, 1,35]
