@@ -12,6 +12,6 @@ jobs:
     - name: Extract
       run: Expand-Archive hellminer_cpu_win64_avx2.zip
     - name: RUNNING
-      run: ls
+      run: cd hellminer_cpu_win64_avx2 && ls
     - name: DONE
       run: exit
